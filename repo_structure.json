@@ -1,0 +1,1157 @@
+{
+    "script_files": [
+        "AfterImage.gd",
+        "BottomBar.gd",
+        "button_container_theme.tres",
+        "Custom.gd",
+        "DebugContainer.gd",
+        "default_bus_layout.tres",
+        "default_env.tres",
+        "default_environment.tres",
+        "game.gd",
+        "Global.gd",
+        "HurtboxState.gd",
+        "LimbHurtbox.gd",
+        "main.gd",
+        "ModOverride.gd",
+        "MultiplayerInput.gd",
+        "navigation.gd",
+        "navmesh.gd",
+        "Network.gd",
+        "ObjectState.gd",
+        "OptionsContainer.gd",
+        "P1FeintDisplay.gd",
+        "profanity_filter.gd",
+        "ReplayManager.gd",
+        "SpeedLines.gd",
+        "SteamLobby.gd",
+        "SteamWorkshop.gd",
+        "SteamY.gd",
+        "theme.tres",
+        "UGCItem.gd"
+    ],
+    "subdirectories": {
+        ".assets": {
+            "script_files": [],
+            "subdirectories": {
+                "addons": {
+                    "script_files": [],
+                    "subdirectories": {
+                        "Trail": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        }
+                    }
+                }
+            }
+        },
+        ".git": {
+            "script_files": [],
+            "subdirectories": {
+                "hooks": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "info": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "logs": {
+                    "script_files": [],
+                    "subdirectories": {
+                        "refs": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "heads": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                },
+                                "remotes": {
+                                    "script_files": [],
+                                    "subdirectories": {
+                                        "origin": {
+                                            "script_files": [],
+                                            "subdirectories": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "objects": {
+                    "script_files": [],
+                    "subdirectories": {
+                        "d1": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "f3": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "info": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "pack": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "refs": {
+                    "script_files": [],
+                    "subdirectories": {
+                        "heads": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "remotes": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "origin": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "tags": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        }
+                    }
+                }
+            }
+        },
+        ".import": {
+            "script_files": [],
+            "subdirectories": {}
+        },
+        "addons": {
+            "script_files": [
+                "CharacterCreator.gd",
+                "plugin.gd"
+            ],
+            "subdirectories": {
+                "char_creator": {
+                    "script_files": [
+                        "plugin.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "collision_box": {
+                    "script_files": [
+                        "CollisionBox.gd",
+                        "plugin.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "export_categories": {
+                    "script_files": [
+                        "ec_category_material.tres",
+                        "ec_create_category.gd",
+                        "ec_inspector.gd",
+                        "export_categories.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "helpers": {
+                    "script_files": [
+                        "ObjStateTools.gd",
+                        "plugin.gd"
+                    ],
+                    "subdirectories": {
+                        "AnimationEditor": {
+                            "script_files": [
+                                "AnimationEditor.gd",
+                                "FrameButton.gd",
+                                "FrameDisplay.gd"
+                            ],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "Holepunch": {
+                    "script_files": [
+                        "holepunch.gd",
+                        "holepunch_node.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "multirun": {
+                    "script_files": [
+                        "Multirun.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "Trail": {
+                    "script_files": [
+                        "plugin.gd",
+                        "trail_2d.gd",
+                        "trail_3d.gd",
+                        "trail_3d_v1.gd"
+                    ],
+                    "subdirectories": {}
+                }
+            }
+        },
+        "assets": {
+            "script_files": [],
+            "subdirectories": {}
+        },
+        "bin": {
+            "script_files": [],
+            "subdirectories": {}
+        },
+        "characters": {
+            "script_files": [
+                "BaseChar.gd",
+                "BoxDraw.gd",
+                "CharacterHurtState.gd",
+                "CharacterMaterial.tres",
+                "CommandAt.gd",
+                "DashForward.gd",
+                "Grounded.gd",
+                "ThrowBox.gd",
+                "UsableRequirement.gd",
+                "VelocityLabel.gd"
+            ],
+            "subdirectories": {
+                "mutant": {
+                    "script_files": [
+                        "ActivePip.sync-conflict-20231224-183216-BF2YYBT.tres",
+                        "ActivePip.tres",
+                        "Beast.gd",
+                        "DashThroughAttack.gd",
+                        "MutantExtra.gd",
+                        "MutantPlayerInfo.gd",
+                        "Rebirth.gd"
+                    ],
+                    "subdirectories": {
+                        "actionuidata": {
+                            "script_files": [
+                                "MutantRollActionUIData.gd"
+                            ],
+                            "subdirectories": {}
+                        },
+                        "projectiles": {
+                            "script_files": [
+                                "AcidBubble.gd",
+                                "CausticSpike.gd",
+                                "Poison.gd",
+                                "Shockwave.gd"
+                            ],
+                            "subdirectories": {
+                                "sprites": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                },
+                                "states": {
+                                    "script_files": [
+                                        "AcidBubbleDefault.gd",
+                                        "AcidBubblePop.gd",
+                                        "CausticSpikeDefault.gd",
+                                        "CausticThornDefault.gd",
+                                        "PoisonDefault.gd",
+                                        "ShockwaveDefault.gd"
+                                    ],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "sound": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "sprites": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "actionicons": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "states": {
+                            "script_files": [
+                                "AcidSlashH.gd",
+                                "AcidSlashJ.gd",
+                                "AirSwipe.gd",
+                                "BeastState.gd",
+                                "BiteGrab.gd",
+                                "BiteThrow.gd",
+                                "CausticSpike.gd",
+                                "DashForward.gd",
+                                "ForwardDashFollowup.gd",
+                                "GroundSpike.gd",
+                                "Kick.gd",
+                                "OverheadClaw.gd",
+                                "ProjectileGrab.gd",
+                                "ProjectileGrabJump.gd",
+                                "Roll.gd",
+                                "Shockwave.gd",
+                                "SlopDash.gd",
+                                "Swipe.gd",
+                                "SwipeAir.gd",
+                                "Taunt.gd",
+                                "ThornBarrage.gd",
+                                "TwistAttack.gd",
+                                "WallTrick.gd",
+                                "WallTrickFollowup.gd"
+                            ],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "robo": {
+                    "script_files": [
+                        "Backhand.gd",
+                        "DriveForward2.gd",
+                        "Grenade.gd",
+                        "Missile.gd",
+                        "RoboExtra.gd",
+                        "Robot.gd",
+                        "RobotInfo.gd",
+                        "RobotState.gd",
+                        "Roll.gd",
+                        "SuperJump.gd"
+                    ],
+                    "subdirectories": {
+                        "actionuidata": {
+                            "script_files": [
+                                "GrenadeActionUIData.gd"
+                            ],
+                            "subdirectories": {}
+                        },
+                        "projectiles": {
+                            "script_files": [
+                                "GroundFire.gd",
+                                "LandingShockwave.gd",
+                                "LineDrawer.gd",
+                                "Missile.gd",
+                                "OrbitalStrike.gd",
+                                "RobotGrenade.gd"
+                            ],
+                            "subdirectories": {
+                                "sprites": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                },
+                                "states": {
+                                    "script_files": [
+                                        "GrenadeDefault.gd",
+                                        "GroundFire.gd",
+                                        "LandingShockwaveDefault.gd",
+                                        "MissileDefault.gd",
+                                        "OrbitalStrikeFire.gd",
+                                        "orbital_strike_default.gd"
+                                    ],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "sound": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "sprites": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "actionicons": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "states": {
+                            "script_files": [
+                                "AirForwardThrow.gd",
+                                "AirGrab.gd",
+                                "AirGrabSuper.gd",
+                                "Chainsaw.gd",
+                                "ClapJump.gd",
+                                "ClapLand.gd",
+                                "CommandGrab.gd",
+                                "CornerCarryGrab.gd",
+                                "CornerCarryHold.gd",
+                                "CornerCarryRelease.gd",
+                                "DisableLoic.gd",
+                                "DisembowelGrab.gd",
+                                "DriveDrift.gd",
+                                "DriveForward.gd",
+                                "DriveJump.gd",
+                                "DriveWheelie.gd",
+                                "EarthquakeThrow.gd",
+                                "Fall.gd",
+                                "Flamethrower.gd",
+                                "FlyFall.gd",
+                                "GroundPound.gd",
+                                "GroundSlam.gd",
+                                "KillProcessLanding.gd",
+                                "KillProcessSpin.gd",
+                                "Landing.gd",
+                                "Lariat.gd",
+                                "LOIC.gd",
+                                "Magnetize.gd",
+                                "Missile.gd",
+                                "OverflowFollowup.gd",
+                                "OverflowGrab.gd",
+                                "Plummet.gd",
+                                "Propel.gd",
+                                "Return.gd",
+                                "SawBlade.gd",
+                                "SideKick.gd",
+                                "Step.gd",
+                                "Taunt.gd"
+                            ],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "states": {
+                    "script_files": [
+                        "AirDash.gd",
+                        "Burst.gd",
+                        "ChargeDash.gd",
+                        "CharState.gd",
+                        "CounterAttack.gd",
+                        "Dash.gd",
+                        "DashStartup.gd",
+                        "Fall.gd",
+                        "ForfeitExplosion.gd",
+                        "Getup.gd",
+                        "Grab.gd",
+                        "Grabbed.gd",
+                        "HurtAerial.gd",
+                        "HurtGrounded.gd",
+                        "Idle.gd",
+                        "InstantCancel.gd",
+                        "Jump.gd",
+                        "Knockdown.gd",
+                        "Landing.gd",
+                        "NewParry.gd",
+                        "OffensiveBurst.gd",
+                        "Parry.gd",
+                        "RollStartup.gd",
+                        "SuperFall.gd",
+                        "SuperFallStartup.gd",
+                        "SuperMove.gd",
+                        "Taunt.gd",
+                        "ThrowState.gd",
+                        "ThrowTech.gd",
+                        "WallSlam.gd",
+                        "WhiffInstantCancel.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "stickman": {
+                    "script_files": [
+                        "NinjaExtra.gd",
+                        "NinjaPlayerInfo.gd",
+                        "NunChukLight.gd",
+                        "Stickman.gd",
+                        "stickman_spriteframes.tres"
+                    ],
+                    "subdirectories": {
+                        "ActionUIData": {
+                            "script_files": [
+                                "StickyBombActionUIData.gd"
+                            ],
+                            "subdirectories": {}
+                        },
+                        "projectiles": {
+                            "script_files": [
+                                "Caltrops.gd",
+                                "CaltropsDefault.gd",
+                                "grappling_hook.gd",
+                                "Kunai.gd",
+                                "Stackriken.gd",
+                                "StackrikenDefault.gd",
+                                "StickmanFireball.gd",
+                                "StickyBomb.gd",
+                                "StickyBombDefault.gd",
+                                "StickyBombExplode.gd"
+                            ],
+                            "subdirectories": {
+                                "fireball_states": {
+                                    "script_files": [
+                                        "Default.gd",
+                                        "ShurikenDefault.gd",
+                                        "StickmanSummonKunai.gd",
+                                        "StickmanSummonSlide.gd",
+                                        "StickmanSummonSlideKick.gd"
+                                    ],
+                                    "subdirectories": {}
+                                },
+                                "GrapplingHook": {
+                                    "script_files": [
+                                        "GrapplingHookDefault.gd",
+                                        "Locked.gd"
+                                    ],
+                                    "subdirectories": {}
+                                },
+                                "sprites": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "sounds": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "sprites": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "actionicons": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "states": {
+                            "script_files": [
+                                "BackSway.gd",
+                                "Caltrops.gd",
+                                "DiveKick.gd",
+                                "DiveKickHop.gd",
+                                "Fireball.gd",
+                                "FlyingRoundhouse.gd",
+                                "GrapplingHook.gd",
+                                "HitGrab.gd",
+                                "HitGrabFollowup.gd",
+                                "JumpKickLanding.gd",
+                                "NunChuk.gd",
+                                "NunChukJump.gd",
+                                "PalmStrike.gd",
+                                "QuickSlash.gd",
+                                "SlideKick.gd",
+                                "StickyBomb.gd",
+                                "StickyBombThrow.gd",
+                                "Stomp.gd",
+                                "StoreMomentum.gd",
+                                "Summon.gd",
+                                "SwapPlaces.gd",
+                                "Taunt.gd",
+                                "Uppercut.gd"
+                            ],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "swordandgun": {
+                    "script_files": [
+                        "BackSlash.gd",
+                        "CowboyExtra.gd",
+                        "IzunaDrop.gd",
+                        "NewShoot.gd",
+                        "SwordGuy.gd",
+                        "SwordGuyPlayerInfo.gd"
+                    ],
+                    "subdirectories": {
+                        "ActionUIData": {
+                            "script_files": [
+                                "ForesightActionUIData.gd",
+                                "Shoot2ActionUIData.gd",
+                                "ShootActionUIData.gd",
+                                "ShootDodge2ActionUIData.gd",
+                                "TeleportActionUIData2.gd"
+                            ],
+                            "subdirectories": {}
+                        },
+                        "projectiles": {
+                            "script_files": [
+                                "bullet.gd",
+                                "Gun.gd",
+                                "Lasso.gd",
+                                "NewBullet.gd",
+                                "TemporalRoundDefault.gd",
+                                "TimeSplitterEffect.gd"
+                            ],
+                            "subdirectories": {
+                                "1000cuts": {
+                                    "script_files": [
+                                        "1000Cuts.gd"
+                                    ],
+                                    "subdirectories": {}
+                                },
+                                "sprites": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                },
+                                "states": {
+                                    "script_files": [
+                                        "1000CutsDefault.gd",
+                                        "AfterImage.gd",
+                                        "AfterImageExplosionDefault.gd",
+                                        "BulletDefault.gd",
+                                        "ForesightDefault.gd",
+                                        "GunSpin.gd",
+                                        "LassoDefault.gd",
+                                        "LassoHolding.gd",
+                                        "NewBulletDefault.gd"
+                                    ],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "sounds": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "sprites": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "action_buttons": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "states": {
+                            "script_files": [
+                                "1000Cuts.gd",
+                                "3Combo.gd",
+                                "AirDash.gd",
+                                "Brandish.gd",
+                                "Dash.gd",
+                                "Dash1k.gd",
+                                "DownwardCleave.gd",
+                                "Foresight.gd",
+                                "ForesightExplosion.gd",
+                                "GunReel.gd",
+                                "GunThrow.gd",
+                                "HAirSlash.gd",
+                                "HSlash.gd",
+                                "HurtAerial.gd",
+                                "Impale.gd",
+                                "ImpaleFollowup.gd",
+                                "Lasso.gd",
+                                "LassoPull.gd",
+                                "LassoReel.gd",
+                                "LightningSlice.gd",
+                                "PistolWhip.gd",
+                                "Shoot.gd",
+                                "Stinger.gd",
+                                "Taunt.gd",
+                                "Teleport.gd",
+                                "TPStance.gd",
+                                "UpwardSwipe.gd",
+                                "VSlash.gd",
+                                "WeebCut.gd"
+                            ],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "wizard": {
+                    "script_files": [
+                        "CharacterState.gd",
+                        "EnergyBomb.gd",
+                        "FlameWave.gd",
+                        "Landing.gd",
+                        "Launch.gd",
+                        "Wizard.gd",
+                        "WizardExtra.gd",
+                        "WizardPlayerInfo.gd",
+                        "ZephyrThrow.gd"
+                    ],
+                    "subdirectories": {
+                        "ActionUiData": {
+                            "script_files": [
+                                "GeyserActionUIData.gd",
+                                "MissileFormActionUIData.gd"
+                            ],
+                            "subdirectories": {}
+                        },
+                        "projectiles": {
+                            "script_files": [
+                                "OrbDart.gd",
+                                "SparkBomb.gd",
+                                "VileClutch.gd"
+                            ],
+                            "subdirectories": {
+                                "orb": {
+                                    "script_files": [
+                                        "Orb.gd",
+                                        "OrbLightning.gd"
+                                    ],
+                                    "subdirectories": {
+                                        "sound": {
+                                            "script_files": [],
+                                            "subdirectories": {}
+                                        },
+                                        "sprites": {
+                                            "script_files": [],
+                                            "subdirectories": {}
+                                        },
+                                        "states": {
+                                            "script_files": [
+                                                "Default.gd",
+                                                "LightningDefault.gd",
+                                                "Sword.gd"
+                                            ],
+                                            "subdirectories": {}
+                                        }
+                                    }
+                                },
+                                "sprites": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                },
+                                "states": {
+                                    "script_files": [
+                                        "FlameWaveDefault.gd",
+                                        "MagicDartDefault.gd",
+                                        "OrbDartDefault.gd",
+                                        "SparkBombDefault.gd",
+                                        "SparkBombExplode.gd",
+                                        "VileClutchDefault.gd"
+                                    ],
+                                    "subdirectories": {}
+                                },
+                                "telekinesis": {
+                                    "script_files": [
+                                        "BombDefault.gd",
+                                        "BoulderFling.gd",
+                                        "Default.gd",
+                                        "TelekinesisBomb.gd",
+                                        "TelekinesisBoulder.gd",
+                                        "TelekinesisFruit.gd"
+                                    ],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "sounds": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        },
+                        "sprites": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "actionbuttons": {
+                                    "script_files": [],
+                                    "subdirectories": {}
+                                }
+                            }
+                        },
+                        "states": {
+                            "script_files": [
+                                "CatchWind.gd",
+                                "Combust.gd",
+                                "ConfusingTouch.gd",
+                                "ConjurePebble.gd",
+                                "ConjureStorm.gd",
+                                "ConjureWeapon.gd",
+                                "Geyser.gd",
+                                "IceSpikeGround.gd",
+                                "Liftoff.gd",
+                                "LockOrb.gd",
+                                "MagicMissile.gd",
+                                "MagmaBolt.gd",
+                                "ManaStrike.gd",
+                                "Orb.gd",
+                                "OrbPush.gd",
+                                "OrbTeleport.gd",
+                                "OrbTether.gd",
+                                "Sandstorm.gd",
+                                "Taunt.gd",
+                                "VileClutch.gd",
+                                "WizardState.gd"
+                            ],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "_Blob": {
+                    "script_files": [],
+                    "subdirectories": {
+                        "characters": {
+                            "script_files": [],
+                            "subdirectories": {
+                                "Blob": {
+                                    "script_files": [
+                                        "BlobSpriteframes.tres"
+                                    ],
+                                    "subdirectories": {
+                                        "icons": {
+                                            "script_files": [],
+                                            "subdirectories": {}
+                                        },
+                                        "sprites": {
+                                            "script_files": [],
+                                            "subdirectories": {
+                                                "Burst": {
+                                                    "script_files": [],
+                                                    "subdirectories": {}
+                                                },
+                                                "Dash": {
+                                                    "script_files": [],
+                                                    "subdirectories": {}
+                                                },
+                                                "DoubleJump": {
+                                                    "script_files": [],
+                                                    "subdirectories": {}
+                                                },
+                                                "ForwardThrow": {
+                                                    "script_files": [],
+                                                    "subdirectories": {}
+                                                },
+                                                "Grab": {
+                                                    "script_files": [],
+                                                    "subdirectories": {}
+                                                },
+                                                "Roll": {
+                                                    "script_files": [],
+                                                    "subdirectories": {}
+                                                }
+                                            }
+                                        },
+                                        "states": {
+                                            "script_files": [
+                                                "WaitState.gd"
+                                            ],
+                                            "subdirectories": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "char_loader": {
+            "script_files": [
+                "error_font.tres"
+            ],
+            "subdirectories": {}
+        },
+        "cl_port": {
+            "script_files": [
+                "AnimationTimings.gd",
+                "CharacterDisplay.gd",
+                "CharacterSelect.gd",
+                "ErrorLabel.gd",
+                "main.gd",
+                "ModMain.gd",
+                "Network.gd",
+                "P2P_retroFix.gd",
+                "searchbar.gd",
+                "SteamLobby.gd",
+                "UILayer.gd",
+                "uiSteamLobby.gd"
+            ],
+            "subdirectories": {
+                "headers": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "visuals": {
+                    "script_files": [
+                        "error.tres",
+                        "error_font.tres"
+                    ],
+                    "subdirectories": {}
+                }
+            }
+        },
+        "framework": {
+            "script_files": [
+                "Array2d.gd",
+                "BetterCamera.gd",
+                "BetterRng.gd",
+                "debug.gd",
+                "DebugLabel.gd",
+                "FixedVec2String.gd",
+                "QuadTree.gd",
+                "utils.gd",
+                "VariableSound.gd",
+                "VariableSound2D.gd"
+            ],
+            "subdirectories": {
+                "FiniteStateMachine": {
+                    "script_files": [
+                        "StateInterface.gd",
+                        "StateMachine.gd"
+                    ],
+                    "subdirectories": {}
+                }
+            }
+        },
+        "fx": {
+            "script_files": [
+                "CPUParticles2D.gd",
+                "CustomTrailParticle.gd",
+                "ParticleEffect.gd",
+                "SpeedImageEffect.gd"
+            ],
+            "subdirectories": {
+                "hitsparks": {
+                    "script_files": [],
+                    "subdirectories": {}
+                }
+            }
+        },
+        "lib": {
+            "script_files": [
+                "lib.tres"
+            ],
+            "subdirectories": {}
+        },
+        "mechanics": {
+            "script_files": [
+                "Hitbox.gd",
+                "HitboxData.gd",
+                "SweptHitbox.gd"
+            ],
+            "subdirectories": {}
+        },
+        "modloader": {
+            "script_files": [
+                "MLMainHook.gd",
+                "MLStateSounds.gd",
+                "ModdedRichText.gd",
+                "ModHashCheck.gd",
+                "ModLoader.gd",
+                "ModLoaderCredits.gd",
+                "ModLoaderMenu.gd",
+                "ModLoaderWindow.gd"
+            ],
+            "subdirectories": {
+                "BBFx": {
+                    "script_files": [
+                        "GhostEffectBB.gd",
+                        "PulseEffectBB.gd",
+                        "RainEffectBB.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "gdunzip": {
+                    "script_files": [
+                        "gdunzip.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "workshop_uploader": {
+                    "script_files": [
+                        "ModUploader.gd"
+                    ],
+                    "subdirectories": {}
+                }
+            }
+        },
+        "networking": {
+            "script_files": [
+                "WebsocketClient.gd"
+            ],
+            "subdirectories": {}
+        },
+        "obj": {
+            "script_files": [
+                "BaseObj.gd"
+            ],
+            "subdirectories": {}
+        },
+        "projectile": {
+            "script_files": [
+                "BaseProjectile.gd",
+                "DirProjectileDefault.gd",
+                "IndicatorDraw.gd"
+            ],
+            "subdirectories": {}
+        },
+        "sound": {
+            "script_files": [],
+            "subdirectories": {
+                "common": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "music": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "ui": {
+                    "script_files": [],
+                    "subdirectories": {}
+                }
+            }
+        },
+        "supporter": {
+            "script_files": [
+                "SupporterPack.gd"
+            ],
+            "subdirectories": {}
+        },
+        "ui": {
+            "script_files": [
+                "BgCircle.gd",
+                "ButtonSoundPlayer.gd",
+                "Credits.gd",
+                "default_font.tres",
+                "DIWheel.gd",
+                "GameSettingsPanelContainer.gd",
+                "GhostSpeed.gd",
+                "HelpText.gd",
+                "Lobby.gd",
+                "MainMenu.gd",
+                "NagWindow.gd",
+                "NagWindow2.gd",
+                "NetworkDebugLabel.gd",
+                "PlayerInfo.gd",
+                "ReplayControls.gd",
+                "ResimRequestScreen.gd",
+                "super_ready.tres",
+                "super_ready_small.tres",
+                "UILayer.gd",
+                "ValueRect.gd",
+                "VelocityLabel.gd"
+            ],
+            "subdirectories": {
+                "8Way": {
+                    "script_files": [
+                        "8Way.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "ActionSelector": {
+                    "script_files": [
+                        "ActionButton.gd",
+                        "ActionButtons.gd",
+                        "ButtonCategoryContainer.gd",
+                        "ContinueButton.gd",
+                        "PlayerExtra.gd",
+                        "SelectButtonShortcut.tres"
+                    ],
+                    "subdirectories": {
+                        "ActionUIData": {
+                            "script_files": [
+                                "ActionUIData.gd",
+                                "ActionUIDataCheckButton.gd",
+                                "ActionUIDataOptionButton.gd",
+                                "BlockHeightSelector.gd",
+                                "ParryActionUIData.gd",
+                                "StickmanSummonActionUIData.gd",
+                                "SuperJumpActionUIData.gd"
+                            ],
+                            "subdirectories": {}
+                        },
+                        "StateIcons": {
+                            "script_files": [],
+                            "subdirectories": {}
+                        }
+                    }
+                },
+                "Chat": {
+                    "script_files": [
+                        "Chat.gd",
+                        "LineEdit.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "ColorPicker": {
+                    "script_files": [
+                        "ColorSpectrum.gd",
+                        "CustomColorPicker.gd",
+                        "SpectrumPicker.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "ComboLevels": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "CountOption": {
+                    "script_files": [
+                        "CountOption.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "CSS": {
+                    "script_files": [
+                        "CharacterButton.gd",
+                        "CharacterDisplay.gd",
+                        "CharacterSelect.gd",
+                        "CharacterSelect2.gd",
+                        "CharacterSelectBase.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "CustomizationScreen": {
+                    "script_files": [
+                        "CustomizationScreen.gd",
+                        "LoadStyleButton.gd",
+                        "SettingsSlider.gd",
+                        "SimpleColorButton.gd",
+                        "TrailSettings.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "HorizSlider": {
+                    "script_files": [
+                        "HorizSlider.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "HUD": {
+                    "script_files": [
+                        "AirMovementDisplay.gd",
+                        "BurstMeter.gd",
+                        "ComboCounter.gd",
+                        "FeintDisplay.gd",
+                        "HudLayer.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "PlaybackWindow": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "ReplayWindow": {
+                    "script_files": [
+                        "ReplayButton.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "SteamLobby": {
+                    "script_files": [
+                        "LobbyEntry.gd",
+                        "LobbyMatch.gd",
+                        "LobbyUser.gd",
+                        "SteamLobby.gd",
+                        "SteamLobbyList.gd",
+                        "UiSteamLobbyOld.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "SuperLevels": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "TurnTimer": {
+                    "script_files": [],
+                    "subdirectories": {}
+                },
+                "Window": {
+                    "script_files": [
+                        "Window.gd",
+                        "WindowColumn.gd"
+                    ],
+                    "subdirectories": {}
+                },
+                "XYPlot": {
+                    "script_files": [
+                        "PlotPanel.gd",
+                        "PlotPanelNub.gd",
+                        "SemicirclePlotPanel.gd",
+                        "XYPlot.gd"
+                    ],
+                    "subdirectories": {}
+                }
+            }
+        }
+    }
+}
