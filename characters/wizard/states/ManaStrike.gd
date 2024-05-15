@@ -16,17 +16,6 @@ func _enter():
 
 	startup_lag = fixed.round(fixed.mul(fixed.div(str(data["x"]), "100"), str(MAX_EXTRA_STARTUP)))
 
-
-
-
-
-
-
-
-
-
-
-
 func _tick():
 	if current_tick == 2:
 		if startup_lag > 0:

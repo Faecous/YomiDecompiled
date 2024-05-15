@@ -1,54 +1,3404 @@
 {
-    "wizard/CharacterState.gd": null,
-    "wizard/EnergyBomb.gd": null,
-    "wizard/FlameWave.gd": null,
-    "wizard/Landing.gd": null,
-    "wizard/Launch.gd": null,
-    "wizard/Wizard.gd": null,
-    "wizard/WizardExtra.gd": null,
-    "wizard/WizardPlayerInfo.gd": null,
-    "wizard/ZephyrThrow.gd": null,
-    "wizard/ActionUiData/GeyserActionUIData.gd": null,
-    "wizard/ActionUiData/MissileFormActionUIData.gd": null,
-    "wizard/projectiles/OrbDart.gd": null,
-    "wizard/projectiles/SparkBomb.gd": null,
-    "wizard/projectiles/VileClutch.gd": null,
-    "wizard/projectiles/orb/Orb.gd": null,
-    "wizard/projectiles/orb/OrbLightning.gd": null,
-    "wizard/projectiles/orb/states/Default.gd": null,
-    "wizard/projectiles/orb/states/LightningDefault.gd": null,
-    "wizard/projectiles/orb/states/Sword.gd": null,
-    "wizard/projectiles/states/FlameWaveDefault.gd": null,
-    "wizard/projectiles/states/MagicDartDefault.gd": null,
-    "wizard/projectiles/states/OrbDartDefault.gd": null,
-    "wizard/projectiles/states/SparkBombDefault.gd": null,
-    "wizard/projectiles/states/SparkBombExplode.gd": null,
-    "wizard/projectiles/states/VileClutchDefault.gd": null,
-    "wizard/projectiles/telekinesis/BombDefault.gd": null,
-    "wizard/projectiles/telekinesis/BoulderFling.gd": null,
-    "wizard/projectiles/telekinesis/Default.gd": null,
-    "wizard/projectiles/telekinesis/TelekinesisBomb.gd": null,
-    "wizard/projectiles/telekinesis/TelekinesisBoulder.gd": null,
-    "wizard/projectiles/telekinesis/TelekinesisFruit.gd": null,
-    "wizard/states/CatchWind.gd": null,
-    "wizard/states/Combust.gd": null,
-    "wizard/states/ConfusingTouch.gd": null,
-    "wizard/states/ConjurePebble.gd": null,
-    "wizard/states/ConjureStorm.gd": null,
-    "wizard/states/ConjureWeapon.gd": null,
-    "wizard/states/Geyser.gd": null,
-    "wizard/states/IceSpikeGround.gd": null,
-    "wizard/states/Liftoff.gd": null,
-    "wizard/states/LockOrb.gd": null,
-    "wizard/states/MagicMissile.gd": null,
-    "wizard/states/MagmaBolt.gd": null,
-    "wizard/states/ManaStrike.gd": null,
-    "wizard/states/Orb.gd": null,
-    "wizard/states/OrbPush.gd": null,
-    "wizard/states/OrbTeleport.gd": null,
-    "wizard/states/OrbTether.gd": null,
-    "wizard/states/Sandstorm.gd": null,
-    "wizard/states/Taunt.gd": null,
-    "wizard/states/VileClutch.gd": null,
-    "wizard/states/WizardState.gd": null
+    "characters/wizard/CharacterState.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_frame_12",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_exit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 9,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 12,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/EnergyBomb.gd": {
+        "extends": "SuperMove",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "process_projectile",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [
+                    {
+                        "name": "projectile",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/FlameWave.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "PROJECTILE_X",
+                "type": "const",
+                "value": "40",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PROJECTILE_Y",
+                "type": "const",
+                "value": "- 16",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_9",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 10,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/Landing.gd": {
+        "extends": null,
+        "variables": [],
+        "functions": [],
+        "classes": []
+    },
+    "characters/wizard/Launch.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 12,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/Wizard.gd": {
+        "extends": "Fighter",
+        "variables": [
+            {
+                "name": "ORB_SCENE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/orb/Orb.tscn\")",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "ORB_PARTICLE_SCENE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/orb/OrbSpawnParticle.tscn\")",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HOVER_AMOUNT",
+                "type": "const",
+                "value": "1200",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HOVER_MIN_AMOUNT",
+                "type": "const",
+                "value": "250",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HOVER_VEL_Y_POS_MODIFIER",
+                "type": "const",
+                "value": "\"0.70\"",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HOVER_VEL_Y_NEG_MODIFIER",
+                "type": "const",
+                "value": "\"0.94\"",
+                "scope": "local",
+                "defined_at": 9,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HOVER_GROUND_FRIC",
+                "type": "const",
+                "value": "\"0.025\"",
+                "scope": "local",
+                "defined_at": 10,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "ORB_SUPER_DRAIN",
+                "type": "const",
+                "value": "2",
+                "scope": "local",
+                "defined_at": 11,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "FAST_FALL_SPEED",
+                "type": "const",
+                "value": "\"7\"",
+                "scope": "local",
+                "defined_at": 12,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "ORB_PUSH_SPEED",
+                "type": "const",
+                "value": "\"8.5\"",
+                "scope": "local",
+                "defined_at": 13,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "TETHER_FALLOFF",
+                "type": "const",
+                "value": "\"0.95\"",
+                "scope": "local",
+                "defined_at": 14,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "TETHER_SPEED",
+                "type": "const",
+                "value": "\"1.5\"",
+                "scope": "local",
+                "defined_at": 15,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "TETHER_TICKS",
+                "type": "const",
+                "value": "90",
+                "scope": "local",
+                "defined_at": 16,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_BOMB_PUSH_DISTANCE",
+                "type": "const",
+                "value": "\"90\"",
+                "scope": "local",
+                "defined_at": 17,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_EXPLOSION_AIR_SPEED",
+                "type": "const",
+                "value": "25",
+                "scope": "local",
+                "defined_at": 18,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_EXPLOSION_GROUND_SPEED",
+                "type": "const",
+                "value": "20",
+                "scope": "local",
+                "defined_at": 19,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_EXPLOSION_DASH_SPEED",
+                "type": "const",
+                "value": "12",
+                "scope": "local",
+                "defined_at": 20,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_SPEED_FRAMES",
+                "type": "const",
+                "value": "70",
+                "scope": "local",
+                "defined_at": 21,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_BOMB_SELF_DAMAGE",
+                "type": "const",
+                "value": "31",
+                "scope": "local",
+                "defined_at": 22,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hover_left",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 24,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hover_drain_amount",
+                "type": "var",
+                "value": "25",
+                "scope": "local",
+                "defined_at": 25,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "fast_fall_drain_amount",
+                "type": "var",
+                "value": "20",
+                "scope": "local",
+                "defined_at": 26,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hover_gain_amount",
+                "type": "var",
+                "value": "12",
+                "scope": "local",
+                "defined_at": 27,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hover_gain_amount_depleted",
+                "type": "var",
+                "value": "4",
+                "scope": "local",
+                "defined_at": 28,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hover_gain_amount_air",
+                "type": "var",
+                "value": "- 1",
+                "scope": "local",
+                "defined_at": 29,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hovering",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 30,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "ghost_started_hovering",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 31,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "fast_falling",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 32,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "fast_fall_landing",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 33,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "gusts_in_combo",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 34,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "tether_ticks",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 35,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "geyser_charge",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 36,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "orb_projectile",
+                "type": "var",
+                "value": "null",
+                "scope": "local",
+                "defined_at": 38,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "can_flame_wave",
+                "type": "var",
+                "value": "true",
+                "scope": "local",
+                "defined_at": 39,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "can_vile_clutch",
+                "type": "var",
+                "value": "true",
+                "scope": "local",
+                "defined_at": 40,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "current_orb_push",
+                "type": "var",
+                "value": "null",
+                "scope": "local",
+                "defined_at": 41,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "detonating_bombs",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 42,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "boulder_projectile",
+                "type": "var",
+                "value": "null",
+                "scope": "local",
+                "defined_at": 43,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "spark_bombs",
+                "type": "var",
+                "value": "[]",
+                "scope": "local",
+                "defined_at": 45,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "nearby_spark_bombs",
+                "type": "var",
+                "value": "[]",
+                "scope": "local",
+                "defined_at": 46,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "default_dash_speed",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 48,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "spark_speed_frames",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 49,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "copy_to",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 54,
+                "parameters": [
+                    {
+                        "name": "f",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "init",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 58,
+                "parameters": [
+                    {
+                        "name": "pos = null",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_blocked_melee_attack",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 70,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_roll_started",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 74,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_parried",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 78,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "apply_grav",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 81,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "apply_grav_fast_fall",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 87,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "apply_grav_custom",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 90,
+                "parameters": [
+                    {
+                        "name": "grav",
+                        "type": "String"
+                    },
+                    {
+                        "name": "fall_speed",
+                        "type": "String"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "add_geyser_charge",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 94,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "apply_fric",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 100,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "add_spark_bomb",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 110,
+                "parameters": [
+                    {
+                        "name": "projectile_name",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "spawn_orb",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 113,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "stack_move_in_combo",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 118,
+                "parameters": [
+                    {
+                        "name": "move_name",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_state_started",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 124,
+                "parameters": [
+                    {
+                        "name": "state",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "gain_super_meter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 132,
+                "parameters": [
+                    {
+                        "name": "amount",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "stale_amount = \"1.0\"",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_got_hit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 137,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_got_parried",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 146,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "incr_combo",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 152,
+                "parameters": [
+                    {
+                        "name": "scale = true",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "projectile = false",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "force = false",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "combo_scale_amount = 1",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_hit_something",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 160,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 163,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "start_moisture_effect",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 281,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "stop_moisture_effect",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 284,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "process_extra",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 287,
+                "parameters": [
+                    {
+                        "name": "extra",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "can_fast_fall",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 334,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "can_hover",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 337,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/WizardExtra.gd": {
+        "extends": "PlayerExtra",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_ready",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 13,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_data_changed",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 24,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "update_selected_move",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 31,
+                "parameters": [
+                    {
+                        "name": "move_state",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_hover_button_toggled",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 46,
+                "parameters": [
+                    {
+                        "name": "on",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_fast_fall_button_toggled",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 51,
+                "parameters": [
+                    {
+                        "name": "on",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_shoot_button_toggled",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 56,
+                "parameters": [
+                    {
+                        "name": "on",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "reset",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 59,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "show_options",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 74,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "get_extra",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 106,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/WizardPlayerInfo.gd": {
+        "extends": "PlayerInfo",
+        "variables": [],
+        "functions": [
+            {
+                "name": "set_fighter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [
+                    {
+                        "name": "fighter",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_process",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [
+                    {
+                        "name": "delta",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/ZephyrThrow.gd": {
+        "extends": "ThrowState",
+        "variables": [
+            {
+                "name": "TRIGGER_ORB_TYPE",
+                "type": "const",
+                "value": "\"Sword\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "TRIGGER_ORB_DELAY",
+                "type": "const",
+                "value": "50",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/ActionUiData/GeyserActionUIData.gd": {
+        "extends": "ActionUIData",
+        "variables": [],
+        "functions": [
+            {
+                "name": "fighter_update",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/ActionUiData/MissileFormActionUIData.gd": {
+        "extends": "ActionUIData",
+        "variables": [],
+        "functions": [
+            {
+                "name": "fighter_update",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 4,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/OrbDart.gd": {
+        "extends": "BaseProjectile",
+        "variables": [],
+        "functions": [
+            {
+                "name": "on_got_push_blocked",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/SparkBomb.gd": {
+        "extends": "BaseProjectile",
+        "variables": [
+            {
+                "name": "DELAY_TICKS",
+                "type": "const",
+                "value": "2",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "exploded",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "armed",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "delay_ticks",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "init",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 9,
+                "parameters": [
+                    {
+                        "name": "pos = null",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "explode",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 13,
+                "parameters": [
+                    {
+                        "name": "manual = false",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 21,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/VileClutch.gd": {
+        "extends": "BaseProjectile",
+        "variables": [],
+        "functions": [
+            {
+                "name": "disable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/orb/Orb.gd": {
+        "extends": "BaseProjectile",
+        "variables": [
+            {
+                "name": "ACCEL_SPEED",
+                "type": "const",
+                "value": "\"0.30\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "FRIC",
+                "type": "const",
+                "value": "\"0.04\"",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "DIRECT_MOVE_SPEED",
+                "type": "const",
+                "value": "\"3.0\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_SPEED_LIMIT",
+                "type": "const",
+                "value": "\"8\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LIGHTNING_Y",
+                "type": "const",
+                "value": "132",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LIGHTNING_PUSH_FORCE",
+                "type": "const",
+                "value": "\"-5\"",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "ATTACK_SUPER_DRAIN",
+                "type": "const",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 9,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LIGHTNING_DRAIN",
+                "type": "const",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 10,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HIT_FORCE_MODIFIER",
+                "type": "const",
+                "value": "\"2.0\"",
+                "scope": "local",
+                "defined_at": 11,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_BACK_FORCE",
+                "type": "const",
+                "value": "\"10\"",
+                "scope": "local",
+                "defined_at": 12,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "ORB_DART_SCENE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/OrbDart.tscn\")",
+                "scope": "local",
+                "defined_at": 14,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LOCKED_DART_SCENE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/OrbDartLocked.tscn\")",
+                "scope": "local",
+                "defined_at": 15,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LIGHTNING_SCENE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/orb/OrbLightning.tscn\")",
+                "scope": "local",
+                "defined_at": 16,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LOCK_PARTICLE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/orb/OrbSpawnParticle.tscn\")",
+                "scope": "local",
+                "defined_at": 17,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "DISABLE_PARTICLE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/orb/OrbSpawnParticle.tscn\")",
+                "scope": "local",
+                "defined_at": 18,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_PARTICLE",
+                "type": "const",
+                "value": "preload(\"res://characters/wizard/projectiles/orb/OrbSpawnParticle.tscn\")",
+                "scope": "local",
+                "defined_at": 19,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_TICKS",
+                "type": "const",
+                "value": "30",
+                "scope": "local",
+                "defined_at": 20,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "triggered_attacks",
+                "type": "var",
+                "value": "{}",
+                "scope": "local",
+                "defined_at": 22,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "frozen",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 24,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "locked",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 25,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "push_ticks",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 27,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "strikes_left",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 29,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "strike_ticks_left",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 30,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "push_dir",
+                "type": "var",
+                "value": "null",
+                "scope": "local",
+                "defined_at": 32,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_ready",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 34,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "get_target_pos",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 37,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "lock",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 44,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "unlock",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 51,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "get_travel_dir",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 56,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_got_push_blocked",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 61,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "travel_towards_creator",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 67,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "attempt_triggered_attack",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 95,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "trigger_attack",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 100,
+                "parameters": [
+                    {
+                        "name": "attack_type",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "attack_delay",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "drain_super",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 112,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "attack",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 116,
+                "parameters": [
+                    {
+                        "name": "attack_type",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 128,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "push",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 135,
+                "parameters": [
+                    {
+                        "name": "fx",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "fy",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "disable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 148,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "spawn_lightning",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 153,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "spawn_orb_dart",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 170,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hit_by",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 176,
+                "parameters": [
+                    {
+                        "name": "hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/orb/OrbLightning.gd": {
+        "extends": "BaseProjectile",
+        "variables": [],
+        "functions": [
+            {
+                "name": "on_got_push_blocked",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/orb/states/Default.gd": {
+        "extends": "ObjectState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/orb/states/LightningDefault.gd": {
+        "extends": "ObjectState",
+        "variables": [
+            {
+                "name": "UNLOCKED_DAMAGE",
+                "type": "const",
+                "value": "100",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LOCKED_DAMAGE",
+                "type": "const",
+                "value": "110",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 8,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_exit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 12,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/orb/states/Sword.gd": {
+        "extends": null,
+        "variables": [
+            {
+                "name": "LOCKED_DAMAGE",
+                "type": "const",
+                "value": "85",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "UNLOCKED_DAMAGE",
+                "type": "const",
+                "value": "60",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 10,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 18,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/states/FlameWaveDefault.gd": {
+        "extends": "DefaultFireball",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "fizzle",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 10,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/states/MagicDartDefault.gd": {
+        "extends": "DirProjectileDefault",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_on_hit_something",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/states/OrbDartDefault.gd": {
+        "extends": null,
+        "variables": [],
+        "functions": [
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 9,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_ready",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 16,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/states/SparkBombDefault.gd": {
+        "extends": "DefaultFireball",
+        "variables": [
+            {
+                "name": "ACTIVATE_DISTANCE",
+                "type": "const",
+                "value": "\"24\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MIN_LIFETIME",
+                "type": "const",
+                "value": "16",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "Y_FRIC",
+                "type": "const",
+                "value": "\"0.05\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MOVE_SPEED",
+                "type": "const",
+                "value": "\"1.5\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "AVOID_SPEED",
+                "type": "const",
+                "value": "\"0.50\"",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "AVOID_DISTANCE",
+                "type": "const",
+                "value": "\"24.0\"",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 13,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 16,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/states/SparkBombExplode.gd": {
+        "extends": "ObjectState",
+        "variables": [
+            {
+                "name": "PUSH_DISTANCE",
+                "type": "const",
+                "value": "\"60\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_SPEED",
+                "type": "const",
+                "value": "\"10\"",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SUPER_METER_GAIN",
+                "type": "const",
+                "value": "35",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "landed",
+                "type": "var",
+                "value": "true",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_1",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 9,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_2",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 18,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_16",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 24,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_hit_something",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 27,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/states/VileClutchDefault.gd": {
+        "extends": "DefaultFireball",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_ready",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 11,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_10",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 19,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/telekinesis/BombDefault.gd": {
+        "extends": null,
+        "variables": [],
+        "functions": [],
+        "classes": []
+    },
+    "characters/wizard/projectiles/telekinesis/BoulderFling.gd": {
+        "extends": "ObjectState",
+        "variables": [
+            {
+                "name": "can_floor_bounce",
+                "type": "var",
+                "value": "true",
+                "scope": "local",
+                "defined_at": 9,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "floor_bounce_ticks",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 10,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 26,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_hit_something",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 64,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/telekinesis/Default.gd": {
+        "extends": "ObjectState",
+        "variables": [
+            {
+                "name": "OFFSET_X",
+                "type": "const",
+                "value": "20",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "OFFSET_Y",
+                "type": "const",
+                "value": "- 55",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LERP_VALUE",
+                "type": "const",
+                "value": "\"0.08\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "Y_FORCE",
+                "type": "const",
+                "value": "\"-12.0\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 11,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 18,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "drop",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 32,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_150",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 35,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/telekinesis/TelekinesisBomb.gd": {
+        "extends": "TelekinesisProjectile",
+        "variables": [],
+        "functions": [
+            {
+                "name": "tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/telekinesis/TelekinesisBoulder.gd": {
+        "extends": "BaseProjectile",
+        "variables": [
+            {
+                "name": "launched",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "disable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 12,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "disable_action",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 28,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hit_action",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 34,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 37,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "drop",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 42,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "launch",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 46,
+                "parameters": [
+                    {
+                        "name": "data",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/projectiles/telekinesis/TelekinesisFruit.gd": {
+        "extends": "TelekinesisProjectile",
+        "variables": [
+            {
+                "name": "HEAL_AMOUNT",
+                "type": "const",
+                "value": "20",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "hit_action",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/CatchWind.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "PULL_SPEED",
+                "type": "const",
+                "value": "\"-5\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_EXTRA_PULL_DIST",
+                "type": "const",
+                "value": "\"200\"",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_EXTRA_PULL",
+                "type": "const",
+                "value": "\"-10\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PULL_FORCE",
+                "type": "const",
+                "value": "\"-1\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "FIGHTER_PULL_SPEED",
+                "type": "const",
+                "value": "\"-2\"",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_exit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 34,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "pull_object",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 39,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/Combust.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "KICKBACK_X",
+                "type": "const",
+                "value": "\"-3.0\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "KICKBACK_Y",
+                "type": "const",
+                "value": "\"-2.0\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_8",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 8,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/ConfusingTouch.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "PUSH_FORCE",
+                "type": "const",
+                "value": "\"5.0\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_hit_something",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 8,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/ConjurePebble.gd": {
+        "extends": "SuperMove",
+        "variables": [
+            {
+                "name": "BOULDERS",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SILLY_ITEM_CHANCES",
+                "type": "const",
+                "value": "{",
+                "scope": "local",
+                "defined_at": 11,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "NON_BOULDER_CHANCE",
+                "type": "const",
+                "value": "15",
+                "scope": "local",
+                "defined_at": 18,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_1",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 20,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "process_projectile",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 28,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 32,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/ConjureStorm.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_ready",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 10,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/ConjureWeapon.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "got_hit",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 7,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_3",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 11,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_6",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_14",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 18,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "on_got_hit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 22,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/Geyser.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "MAX_DISTS",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "STARTUP_LAG",
+                "type": "const",
+                "value": "4",
+                "scope": "local",
+                "defined_at": 9,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PARTICLES",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 11,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PROJECTILES",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 17,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "DAMAGE",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 23,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MINDAMAGE",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 29,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "TIMING",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 35,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PLUS",
+                "type": "const",
+                "value": "[",
+                "scope": "local",
+                "defined_at": 41,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "center_x",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 51,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "center_y",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 52,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "hit",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 55,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "charges",
+                "type": "var",
+                "value": "3",
+                "scope": "local",
+                "defined_at": 57,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "startup_lag",
+                "type": "var",
+                "value": "STARTUP_LAG",
+                "scope": "local",
+                "defined_at": 58,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 60,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 65,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 83,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 86,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_7",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 106,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_9",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 115,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_on_hit_something",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 169,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "_hitbox",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/IceSpikeGround.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/Liftoff.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "SPEED",
+                "type": "const",
+                "value": "\"15.0\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "SPARK_SPEED",
+                "type": "const",
+                "value": "\"20.0\"",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "HITBOX_OFFSET",
+                "type": "const",
+                "value": "\"-28.0\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_DOWN_SPEED",
+                "type": "const",
+                "value": "\"10\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "FAST_FALL_REDUCTION",
+                "type": "const",
+                "value": "200",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "LAND_CANCEL_DAMAGE",
+                "type": "const",
+                "value": "5",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 15,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_6",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 22,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 52,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_exit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 71,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/LockOrb.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_1",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 8,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_locked",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 16,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/MagicMissile.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "PROJECTILE_X",
+                "type": "const",
+                "value": "10",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PROJECTILE_Y",
+                "type": "const",
+                "value": "- 16",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_7",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 7,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/MagmaBolt.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_ready",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 10,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/ManaStrike.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "MAX_DISTANCE",
+                "type": "const",
+                "value": "\"120\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MIN_DISTANCE",
+                "type": "const",
+                "value": "\"30\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_EXTRA_STARTUP",
+                "type": "const",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "startup_lag",
+                "type": "var",
+                "value": "0",
+                "scope": "local",
+                "defined_at": 12,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 30,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_exit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 46,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/Orb.gd": {
+        "extends": "SuperMove",
+        "variables": [],
+        "functions": [
+            {
+                "name": "_frame_6",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/OrbPush.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "SPEED",
+                "type": "const",
+                "value": "\"12\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_1",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 8,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_locked",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/OrbTeleport.gd": {
+        "extends": "SuperMove",
+        "variables": [
+            {
+                "name": "SUPERS_CONSUMED",
+                "type": "const",
+                "value": "1",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_DIST_H",
+                "type": "const",
+                "value": "640",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_DIST_V",
+                "type": "const",
+                "value": "200",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_frame_1",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 7,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_2",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 20,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 24,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/OrbTether.gd": {
+        "extends": "WizardState",
+        "variables": [],
+        "functions": [
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 3,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_frame_0",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 14,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/Sandstorm.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "DOT",
+                "type": "const",
+                "value": "4",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_SPEED",
+                "type": "const",
+                "value": "\"5\"",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_EXTRA_PUSH_DIST",
+                "type": "const",
+                "value": "\"200\"",
+                "scope": "local",
+                "defined_at": 5,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "MAX_EXTRA_PUSH",
+                "type": "const",
+                "value": "\"10\"",
+                "scope": "local",
+                "defined_at": 6,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSH_FORCE",
+                "type": "const",
+                "value": "\"2\"",
+                "scope": "local",
+                "defined_at": 7,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "FIGHTER_PUSH_SPEED",
+                "type": "const",
+                "value": "\"1\"",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSHBACK_SPEED_X",
+                "type": "const",
+                "value": "\"0.25\"",
+                "scope": "local",
+                "defined_at": 9,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "PUSHBACK_SPEED_Y",
+                "type": "const",
+                "value": "\"0.25\"",
+                "scope": "local",
+                "defined_at": 10,
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "COMBO_REDUCTION",
+                "type": "const",
+                "value": "\"0.85\"",
+                "scope": "local",
+                "defined_at": 11,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 16,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_exit",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 42,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "push_object",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 46,
+                "parameters": [
+                    {
+                        "name": "obj",
+                        "type": "unknown"
+                    },
+                    {
+                        "name": "dir",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/Taunt.gd": {
+        "extends": null,
+        "variables": [
+            {
+                "name": "FRIC",
+                "type": "const",
+                "value": "\"0.025\"",
+                "scope": "local",
+                "defined_at": 3,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_tick",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 5,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/VileClutch.gd": {
+        "extends": "WizardState",
+        "variables": [
+            {
+                "name": "MAX_DISTANCE",
+                "type": "const",
+                "value": "\"500\"",
+                "scope": "local",
+                "defined_at": 4,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "get_projectile_pos",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 6,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "process_projectile",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 12,
+                "parameters": [
+                    {
+                        "name": "_projectile",
+                        "type": "unknown"
+                    }
+                ],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "is_usable",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 15,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    },
+    "characters/wizard/states/WizardState.gd": {
+        "extends": "CharacterState",
+        "variables": [
+            {
+                "name": "triggered_orb_attack",
+                "type": "var",
+                "value": "false",
+                "scope": "local",
+                "defined_at": 8,
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "functions": [
+            {
+                "name": "_enter_shared",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 10,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            },
+            {
+                "name": "_tick_shared",
+                "return_type": "void",
+                "scope": "local",
+                "defined_at": 15,
+                "parameters": [],
+                "used_at": [],
+                "references": []
+            }
+        ],
+        "classes": []
+    }
 }
