@@ -1,0 +1,167 @@
+[gd_resource type="SpriteFrames" load_steps=43 format=2]
+
+[ext_resource path="res://_Blob/characters/Blob/sprites/Knockdown.png" type="Texture" id=1]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Roll/Roll2.png" type="Texture" id=2]
+[ext_resource path="res://_Blob/characters/Blob/sprites/WallSlam.png" type="Texture" id=3]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Roll/Roll1.png" type="Texture" id=4]
+[ext_resource path="res://_Blob/characters/Blob/sprites/HurtGroundedHigh.png" type="Texture" id=5]
+[ext_resource path="res://_Blob/characters/Blob/sprites/HurtGroundedLow.png" type="Texture" id=6]
+[ext_resource path="res://_Blob/characters/Blob/sprites/HurtGroundedMid.png" type="Texture" id=7]
+[ext_resource path="res://_Blob/characters/Blob/sprites/HurtAerial.png" type="Texture" id=8]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Grabbed.png" type="Texture" id=9]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Getup.png" type="Texture" id=10]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Landing.png" type="Texture" id=11]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Jump.png" type="Texture" id=12]
+[ext_resource path="res://_Blob/characters/Blob/sprites/JumpBack.png" type="Texture" id=13]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Roll/Roll3.png" type="Texture" id=14]
+[ext_resource path="res://_Blob/characters/Blob/sprites/InstantCancel.png" type="Texture" id=15]
+[ext_resource path="res://_Blob/characters/Blob/sprites/DashBackward.png" type="Texture" id=16]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Roll/Roll4.png" type="Texture" id=17]
+[ext_resource path="res://_Blob/characters/Blob/sprites/DashForward.png" type="Texture" id=18]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ForwardThrow/ForwardThrow6.png" type="Texture" id=19]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Grab/Grab2.png" type="Texture" id=20]
+[ext_resource path="res://_Blob/characters/Blob/sprites/DoubleJump/DoubleJump1.png" type="Texture" id=21]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Grab/Grab4.png" type="Texture" id=22]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ForwardThrow/ForwardThrow7.png" type="Texture" id=23]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Grab/Grab3.png" type="Texture" id=24]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ForwardThrow/ForwardThrow9.png" type="Texture" id=25]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Grab/Grab1.png" type="Texture" id=26]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ForwardThrow/ForwardThrow10.png" type="Texture" id=27]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ForwardThrow/ForwardThrow8.png" type="Texture" id=28]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst2.png" type="Texture" id=29]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst9.png" type="Texture" id=30]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst6.png" type="Texture" id=31]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst3.png" type="Texture" id=32]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst4.png" type="Texture" id=33]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst1.png" type="Texture" id=34]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst10.png" type="Texture" id=35]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst5.png" type="Texture" id=36]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst7.png" type="Texture" id=37]
+[ext_resource path="res://_Blob/characters/Blob/sprites/Burst/Burst8.png" type="Texture" id=38]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ParryHigh.png" type="Texture" id=39]
+[ext_resource path="res://_Blob/characters/Blob/sprites/ParryLow.png" type="Texture" id=40]
+[ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=41]
+[ext_resource path="res://_Blob/characters/Blob/sprites/BlobWait.png" type="Texture" id=78]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 33 ), ExtResource( 36 ), ExtResource( 30 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 30 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 29 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Burst",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "DashBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": true,
+"name": "DashForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ) ],
+"loop": true,
+"name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 28 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "ForwardThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "Getup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 20 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Grab",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "HurtAerial",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "HurtGroundedLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "InstantCancel",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "JumpBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Knockdown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Landing",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ) ],
+"loop": true,
+"name": "ParryHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 40 ) ],
+"loop": true,
+"name": "ParryLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 14 ), ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "RollBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 2 ), ExtResource( 14 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 41 ) ],
+"loop": true,
+"name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 78 ) ],
+"loop": true,
+"name": "Wait",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "WallSlam",
+"speed": 5.0
+} ]
